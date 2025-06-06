@@ -1,0 +1,55 @@
+from modules.formatter_consultant import generate_consultant_digest
+from modules.fppc_updater import update_fppc_all
+from modules.press_scraper import fetch_press_clips
+from modules.load_config import load_config
+import markdown
+import yagmail
+from datetime import datetime
+
+# === CONFIG ===
+GMAIL_USER = "email"
+GMAIL_APP_PASSWORD = "passsword"
+RECIPIENT_EMAIL = [
+    "username gmail.com"
+]
+SEND_EMAIL = True  # 👈 Toggle this to True to send email
+
+# === BUILD REPORT ===
+def build_daily_report():
+    trackers = load_config()["trackers"]
+    press_clips = fetch_press_clips(trackers, hours_ago=24)
+    return generate_consultant_digest(press_clips=press_clips)
+
+# === EMAIL REPORT ===
+def send_email_report():
+    date = datetime.now().strftime("%B %d, %Y")
+    subject = f"CA Axiom Daily Report – {date}"
+
+    # Get Markdown version
+    raw_body = build_daily_report()
+
+    # Save Markdown to file
+    with open("output_consultant_report.txt", "w", encoding="utf-8") as f:
+        f.write(raw_body)
+    print("✅ Saved to output_consultant_report.txt")
+
+    # If sending is disabled, stop here
+    if not SEND_EMAIL:
+        print("🚫 SEND_EMAIL is False — skipping email send.")
+        return
+
+    # Convert to HTML for email
+    html_body = markdown.markdown(raw_body)
+
+    # Send email
+    yag = yagmail.SMTP(GMAIL_USER, GMAIL_APP_PASSWORD)
+    yag.send(to=RECIPIENT_EMAIL, subject=subject, contents=html_body)
+    print("✅ Email sent!")
+
+# === RUN ===
+if __name__ == "__main__":
+    print("Updating FPPC filings...")
+    update_fppc_all()
+
+    print("📬 Sending daily report...")
+    send_email_report()
