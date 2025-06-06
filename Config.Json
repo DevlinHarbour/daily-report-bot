@@ -1,0 +1,362 @@
+{
+  "trackers": [
+    {
+      "name": "Jamie Johansson",
+      "district": "AD-3",
+      "type": "candidate",
+      "side": "us",
+      "search_terms": ["Jamie Johansson"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478166&view=electronic",
+      "audiences": ["staff", "consultant", "caucus"],
+      "opponents": ["Dom Belza", "Andrew Coolidge"],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1478167&view=lateexpn",
+            "start_date": "2024-06-06"
+      }
+    },
+    {
+      "name": "Dom Belza",
+      "district": "AD-3",
+      "type": "candidate",
+      "side": "them",
+      "search_terms": ["Dom Belza"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1477103&view=electronic",
+      "audiences": [],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1476816&view=late3",
+            "start_date": "2024-06-06"
+      }
+    },
+    {
+      "name": "Andrew Cooladge",
+      "district": "AD-3",
+      "type": "candidate",
+      "side": "them",
+      "search_terms": ["Andrew Coolidge"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1476977&view=electronic",
+      "audiences": [],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1476978&view=lateexpn",
+            "start_date": "2024-06-06"
+      }
+    },
+    {
+      "name": "Charles Hughes",
+      "district": "AD-34",
+      "type": "candidate",
+      "side": "us",
+      "search_terms": ["Charles Hughes"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+      "audiences": ["staff", "consultant", "caucus"],
+      "opponents": ["Thurston Smith"],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+            "start_date": "2024-06-06"
+      }
+    },
+    {
+      "name": "Smitty Smith",
+      "district": "AD-34",
+      "type": "candidate",
+      "side": "them",
+      "search_terms": ["Thurston smith"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1477001&view=electronic",
+      "audiences": [],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1421298&view=lateexpn&session=2025",
+            "start_date": "2024-06-06"
+      }
+    },
+    {
+      "name": "Heather Hadwick",
+      "district": "AD-1",
+      "type": "candidate",
+      "side": "us",
+      "search_terms": ["Heather Hadwick"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1477657&session=2025&view=electronic",  
+      "audiences": ["staff", "consultant", "caucus"],
+      "opponents": [],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1460599&view=lateexpn&session=2025",
+            "start_date": "2024-06-06"
+      }
+    },
+    {
+      "name": "Jeff Gonzalez",
+      "district": "AD-36",
+      "type": "candidate",
+      "side": "us",
+      "search_terms": ["Jeff Gonzalez"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1477498&view=electronic",  
+      "audiences": ["staff", "consultant", "caucus"],
+      "opponents": [],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1401919&view=lateexpn&session=2025",
+            "start_date": "2024-06-06"
+      }
+    },
+    {
+      "name": "Alexandra Macedo",
+      "district": "AD-33",
+      "type": "candidate",
+      "side": "us",
+      "search_terms": ["Alexandra Macedo"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1477489&view=electronic",  
+      "audiences": ["staff", "consultant", "caucus"],
+      "opponents": [],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1464579&view=lateexpn&session=2025",
+            "start_date": "2024-06-06"
+      }
+    },
+    {
+      "name": "Laurie Davies",
+      "district": "AD-74",
+      "type": "candidate",
+      "side": "us",
+      "search_terms": ["Laurie Davies"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1477105&view=electronic",  
+      "audiences": ["staff", "consultant", "caucus"],
+      "opponents": ["Chris Duncan"],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1419968&view=lateexpn&session=2023",
+            "start_date": "2025-01-01"
+      }
+    },
+    {
+      "name": "Mike Murphy",
+      "district": "AD-27",
+      "type": "candidate",
+      "side": "us",
+      "search_terms": ["\"Mike Murphy\" AND (Assembly OR Merced)"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478647&view=electronic",  
+      "audiences": ["staff", "consultant", "caucus"],
+      "opponents": [],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1422006&view=lateexpn&session=2023",
+            "start_date": "2025-01-01"
+      }
+    },
+    {
+      "name": "Josh Hoover",
+      "district": "AD-07",
+      "type": "candidate",
+      "side": "us",
+      "search_terms": ["\"Josh Hoover\" AND (Assembly OR Sacramento)"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1476883&session=2025&view=electronic",  
+      "audiences": ["staff", "caucus"],
+      "opponents": [],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1442522&view=lateexpn",
+            "start_date": "2025-01-01"
+      }
+    },
+    {
+      "name": "Leticia Castillo",
+      "district": "AD-58",
+      "type": "candidate",
+      "side": "us",
+      "search_terms": ["\"Leticia Castillo\" AND Assembly"],
+      "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1477348&view=electronic",  
+      "audiences": ["staff", "caucus"],
+      "opponents": [],
+      "ie_tracking": {
+            "enabled": true,
+            "ie_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1457476&view=late3",
+            "start_date": "2025-01-01"
+      }
+    },
+{
+  "name": "James Gallagher",
+  "district": "AD-3",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["James Gallagher"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "Joe Patterson",
+  "district": "AD-5",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["Joe Patterson"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "David Tangipa",
+  "district": "AD-8",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["David Tangipa"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "Heath Flora",
+  "district": "AD-9",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["Heath Flora"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "Juan Alanis",
+  "district": "AD-22",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["Juan Alanis"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "Stan Ellis",
+  "district": "AD-32",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["Stan Ellis"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "Tom Lackey",
+  "district": "AD-34",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["Tom Lackey"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "Greg Wallis",
+  "district": "AD-47",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["Greg Wallis"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1477044&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "Phillip Chen",
+  "district": "AD-59",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["Phillip Chen"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "Tri Ta",
+  "district": "AD-70",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["Tri Ta"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "Kate Sanchez",
+  "district": "AD-71",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["Kate Sanchez"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+  }
+},
+{
+  "name": "Diane Dixon",
+  "district": "AD-72",
+  "type": "candidate",
+  "side": "us",
+  "search_terms": ["Bill essayli"],
+  "fppc_url": "https://cal-access.sos.ca.gov/Campaign/Committees/Detail.aspx?id=1478005&session=2025&view=electronic",
+  "audiences": ["staff", "caucus"],
+  "opponents": [],
+  "ie_tracking": {
+    "enabled": true,
+    "ie_url": "https://cal-access.sos.ca.gov/Campaign/Candidates/Detail.aspx?id=1477997&view=lateexpn",
+    "start_date": "2024-06-06"
+
+  }
+}
+  ]
+}
