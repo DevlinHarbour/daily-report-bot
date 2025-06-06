@@ -1,0 +1,94 @@
+import os
+import json
+from datetime import datetime, timedelta
+from modules.ie_tracker import track_ie_filings
+from modules.load_config import load_config
+
+def generate_consultant_digest(press_clips=None):
+    data_dir = "./data"
+    all_data = []
+
+    for filename in os.listdir(data_dir):
+        if filename.endswith(".json"):
+            with open(os.path.join(data_dir, filename), "r", encoding="utf-8") as f:
+                content = json.load(f)
+                all_data.append(content)
+
+    fppc_blocks = []
+    ie_blocks = []
+
+    config = load_config()
+
+    for candidate in config["trackers"]:
+        if candidate.get("ie_tracking", {}).get("enabled"):
+            ie_result = track_ie_filings(candidate)
+            if ie_result:
+                # Split by double-newline (filing blocks), then clean each one
+                blocks = [b.strip() for b in ie_result.strip().split("\n\n")]
+                for block in blocks:
+                    lines = [line.strip() for line in block.split("\n") if line.strip()]
+                    clean_block = "<br>".join(lines)
+                    ie_blocks.append(clean_block)
+
+    time_threshold = datetime.now() - timedelta(hours=24)
+
+    for entry in all_data:
+        name = entry["name"]
+        district = entry["district"]
+        side = entry["side"]
+        label = f"{district}: {name}"
+        if side == "them":
+            label += " (Opponent)"
+
+        for filing in entry.get("fppc_filings", []):
+            try:
+                filing_date = datetime.strptime(filing["date"], "%Y-%m-%d")
+            except:
+                continue
+
+            if filing_date >= time_threshold:
+                form = filing["form"].strip().replace("\n", " ")
+                date = filing["date"]
+                amount = filing["amount"]
+                url = filing["url"]
+                emoji = "🟩" if side == "us" else "🟥"
+                linked_form = f"[{form}]({url})"
+                block = f"{emoji} {label}<br>{date} | {linked_form} | {amount}"
+                fppc_blocks.append(block)
+
+    report = f"**🔮 CA Axiom Client Digest – {datetime.now().strftime('%B %d, %Y')}**\n"
+    report += "---\n\n"
+
+    report += "**🚨 IE WATCHDOG**\n"
+    report += "\n".join(ie_blocks) if ie_blocks else "No new IEs filed."
+    report += "\n\n"
+
+    report += "**💰 FPPC FILINGS**\n"
+    report += "\n".join(fppc_blocks) if fppc_blocks else "No new FPPC reports filed"
+    report += "\n\n"
+
+    report += "**📰 PRESS CLIPS**\n"
+    if press_clips:
+        sides = {c["name"]: c.get("side", "us") for c in config["trackers"]}
+        dists = {c["name"]: c.get("district") for c in config["trackers"]}
+
+        press_blocks = []
+        for clip in press_clips:
+            candidate = clip["candidate"]
+            district = dists.get(candidate, "??")
+            side = sides.get(candidate, "us")
+            emoji = "🟩" if side == "us" else "🟥"
+            label = f"{district}: {candidate}"
+            title = f"[{clip['title']}]({clip['url']})"
+            snippet = f"**Snippet:** *{clip['snippet']}*"
+            block = f"{emoji} {label}<br>{title}<br>{snippet}"
+            press_blocks.append(block)
+
+        report += "\n".join(press_blocks)
+    else:
+        report += "No recent press clips found."
+
+    report += "\n---\n"
+    report += "_Sent via OppoTracker · Built by Devlin_"
+
+    return report
